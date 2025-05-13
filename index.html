@@ -31,7 +31,7 @@
         <img src="./img/title2.png" alt="title">
 
         <h1 class="title title_font1">
-            天賜的故事：香港兒童癌病後的困難與幫助
+            百萬藥單上的童年：香港兒童癌症家庭的經濟拉鋸戰
         </h1>
 
         <h2 class="date date_font1">
@@ -353,20 +353,29 @@
                         series: [{
                                 name: '項目數量',
                                 type: 'bar',
-                                data: [290, 362]
+                                data: [290, 362],
+                                itemStyle: {
+                                    color: '#91cc75'
+                                }
                             },
                             {
                                 name: '增長率',
                                 type: 'line',
                                 yAxisIndex: 1,
-                                data: [0, 25]
+                                data: [0, 25],
+                                lineStyle: {
+                                    color: '#fac858'
+                                },
+                                itemStyle: {
+                                    color: '#fac858'
+                                },
+                                symbol: 'circle'
                             }
                         ]
                     };
 
                     chart.setOption(option);
                 </script>
-
 
                 <p style="text-align: center;">
                     <small>
@@ -376,8 +385,8 @@
                     </small>
                 </p>
             </figure>
-
         </section>
+
 
 
         <section class="section1" id="md1">
