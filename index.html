@@ -243,6 +243,7 @@
                 <script>
                     var myChart = echarts.init(document.getElementById('main1'));
                     var option = {
+                        color: ['#2bc5cd', '#31bf8a', '#519d39', '#77bf60', '#7ed957', '#c1ff72', '#00bf63'],
                         tooltip: {
                             trigger: 'item',
                             formatter: '{b}: {d}%'
@@ -288,6 +289,7 @@
                     };
                     myChart.setOption(option);
                 </script>
+
             </figure>
 
 
@@ -326,6 +328,7 @@
                     var chart = echarts.init(document.getElementById('chart'));
 
                     var option = {
+                        color: ['#2bc5cd', '#31bf8a', '#519d39', '#77bf60', '#7ed957', '#c1ff72', '#00bf63'],
                         tooltip: {
                             trigger: 'axis'
                         },
@@ -354,22 +357,13 @@
                         series: [{
                                 name: '項目數量',
                                 type: 'bar',
-                                data: [290, 362],
-                                itemStyle: {
-                                    color: '#91cc75'
-                                }
+                                data: [290, 362]
                             },
                             {
                                 name: '增長率',
                                 type: 'line',
                                 yAxisIndex: 1,
                                 data: [0, 25],
-                                lineStyle: {
-                                    color: '#fac858'
-                                },
-                                itemStyle: {
-                                    color: '#fac858'
-                                },
                                 symbol: 'circle'
                             }
                         ]
@@ -377,6 +371,7 @@
 
                     chart.setOption(option);
                 </script>
+
 
                 <p style="text-align: center;">
                     <small>
@@ -478,6 +473,7 @@
                     var option;
 
                     option = {
+                        color: ['#2bc5cd', '#31bf8a', '#519d39', '#77bf60', '#7ed957', '#c1ff72', '#00bf63'],
                         tooltip: {
                             trigger: 'axis',
                             axisPointer: {
@@ -514,28 +510,19 @@
                                 name: '非自費藥物支出',
                                 type: 'bar',
                                 stack: '總藥物開支',
-                                data: [5708, 5969, 6594, 9295, 9681],
-                                itemStyle: {
-                                    color: '#91cc75'
-                                }
+                                data: [5708, 5969, 6594, 9295, 9681]
                             },
                             {
                                 name: '自費藥物支出',
                                 type: 'bar',
                                 stack: '總藥物開支',
-                                data: [2394, 2716, 3048, 3156, 3446],
-                                itemStyle: {
-                                    color: '#fac858'
-                                }
+                                data: [2394, 2716, 3048, 3156, 3446]
                             },
                             {
                                 name: '撒瑪利亞基金資助',
                                 type: 'line',
                                 yAxisIndex: 1,
                                 data: [576.1, 718.8, 753.0, 826.7, 1052.2],
-                                lineStyle: {
-                                    color: '#5470c6'
-                                },
                                 symbol: 'circle'
                             },
                             {
@@ -543,9 +530,6 @@
                                 type: 'line',
                                 yAxisIndex: 1,
                                 data: [427.6, 719.8, 824.5, 842.2, 868.7],
-                                lineStyle: {
-                                    color: '#ee6666'
-                                },
                                 symbol: 'triangle'
                             }
                         ]
@@ -553,6 +537,7 @@
 
                     myChart.setOption(option);
                 </script>
+
 
                 <p style="text-align: center;">
                     <small>
