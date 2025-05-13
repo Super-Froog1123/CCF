@@ -238,7 +238,7 @@
             <!-- 粘贴嵌入图表代码 -->
             <figure>
                 <h2>香港癌瘤及免疫系統藥物類型佔比</h2>
-                <div id="main1"></div>
+                <div id="main1" style="width: 100%; height: 500px;"></div>
 
                 <script>
                     var myChart = echarts.init(document.getElementById('main1'));
@@ -256,7 +256,7 @@
                             name: '藥物類型',
                             type: 'pie',
                             radius: '70%',
-                            center: ['60%', '50%'],
+                            center: ['50%', '50%'],
                             data: [{
                                     value: 120,
                                     name: '通用藥物'
